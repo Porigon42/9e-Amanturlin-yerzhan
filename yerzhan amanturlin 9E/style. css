@@ -1,74 +1,113 @@
-body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-    }
-    .box {
-        flex: 1;
-        height: 100%;
-    }
-.textblue{
-    color: blue;
+body{
+
+margin: 0;
+ background-color: #001d3d;
 }
-.textred{
-    color: red;
+/* Все про меню */
+.menu{
+ padding: 0 50px;
+ display: flex;
+ height: 90px;
+ align-items: center;
+ margin: 30px 50px;
+ border: 1px solid #ffc300;
+ border-radius: 40px;
 }
-.textgrass{
-    color: green;
+.link{
+ text-decoration: none;
+ font-size: 30px;
+ color:#ffc300;
+ margin: 0 25px;
 }
-.textyellow{
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  border: 3px solid yellow;
-  padding: 10px;
+.logo{
+ text-decoration: none;
+ font-size: 30px;
+ font-weight: 600;
+ color:#ffd60a;
+ margin: 0 25px; 
 }
-.textsize{
-    size: 200px;
+.btn{
+ background-color: #000814;
+ padding: 5px 15px;
+ border-radius: 20px;
+ text-decoration: none;
+ font-size: 30px;
+ color: white;
+ margin: 0 25px;
 }
-h1 {
-    font-size: 80px;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-img {
-    display: flex;
-  align-items: center;
-  justify-content: center;
+.right{
+ position: absolute;
+ right: 80px;
 }
-.button {
-    background-color: red; 
-    border: none;
-    color: white;
-    padding: 30px 64px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    margin: 8px 4px;
-    cursor: pointer;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
+
+
+/* Секция hero*/
+section{
+ min-height: calc(100vh - 150px - 50px);
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
+#hero{
+ display: flex;
 }
-.image-container {
-  text-align: center;
-  margin: auto;
-  width: 500px;
-  height: 500px;
+.korobka{
+ width: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center; 
 }
-.image-container img {
-  max-width: 100%; 
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
+.korobka2{
+ width: 50%;
+ display: flex;
+ align-items: end;
+ justify-content: center; 
+}
+h1{
+ font-size: 100px;
+}
+h2{
+ font-size: 30px;
+ margin: 0;
+}
+
+
+/* Skills */
+.dflex{
+ display: flex;
+}
+.ml50{
+ margin-left: 50px;
+}
+.circle{
+ width: 30px;
+ height: 30px;
+ border-radius: 100%;
+ background-color:red;
+}
+.w400{
+ width: 200px;
+}
+
+
+
+/* Украшения */
+.krug{
+ width: 800px;
+ height: 800px;
+ position: absolute;
+ top: 400px;
+ right: 30px;
+ background: rgb(255,62,165);
+ background: linear-gradient(90deg, rgba(255,62,165,1) 0%, rgba(255,181,218,1) 100%);
+ z-index: 1;
+ border-radius: 100%;
+}
+img{
+ z-index: 2;
+ width: 700px;
+}
+#aboutme{
+ position: relative;
+ z-index: 3;
+ background-color: #003566;
 }
